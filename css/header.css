@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background: url(../assets/img/star-war-header.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 6rem;
+}
+
+.star {
+  width: 457px;
+  height: 117px;
+  position: relative;
+  left: 18rem;
+  top: 1rem;
+  animation: slide-left 1s ease-in-out;
+}
+
+.prota {
+  max-width: 1353px;
+  max-height: 1022px;
+  position: relative;
+  right: 3rem;
+  bottom: 1rem;
+  z-index: 2;
+}
+
+.wars {
+  width: 501px;
+  height: 117px;
+  position: relative;
+  right: 12rem;
+  top: 1rem;
+  animation: slide-right 1s ease-in-out;
+}
+
+.carrossel-container {
+  width: 180px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  right: 20rem;
+}
+
+.carrossel-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+
+.carrossel-title p,
+.carrossel-title h2 {
+  font-size: 1.2rem;
+}
+
+.carrossel-container .line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+.carrossel-content {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.carrossel-content p {
+  font-size: 1.2rem;
+}
+
+.carrossel-content p span {
+  font-size: 1rem;
+}
+
+.carrossel-content button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 4px;
+  background: #999;
+  cursor: pointer;
+}
+
+button span.left {
+  background: url(../assets/img/arrow_left.svg) no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+}
+
+button span.right {
+  background: url(../assets/img/arrow_right.svg) no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+}
+
+@keyframes slide-left {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 18rem;
+  }
+}
+@keyframes slide-right {
+  from {
+    right: -26rem;
+  }
+  to {
+    right: 12rem;
+  }
+}
