@@ -5,11 +5,6 @@ header {
   position: relative;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 .logo {
   width: 100%;
   display: flex;
