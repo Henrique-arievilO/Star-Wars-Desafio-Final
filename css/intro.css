@@ -1,0 +1,155 @@
+.container {
+  width: 100%;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.intro {
+  grid-column: 2 / 12;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  top: -4rem;
+}
+
+.container {
+  background: url(../assets/intro-bg.png) no-repeat;
+  background-size: contain;
+}
+
+.banner {
+  width: 304px;
+  height: 448px;
+  padding: 4rem 1rem;
+  background: url(../assets/banner.png) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner h2 {
+  width: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner p {
+  font-size: 1rem;
+}
+
+.banner button {
+  display: block;
+  padding: 4px 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background: transparent;
+  border: solid 2px #fff;
+  border-radius: 8px;
+}
+
+.about {
+  text-align: right;
+  display: flex;
+  gap: 1rem;
+  align-self: end;
+}
+
+.about h2 {
+  width: 100%;
+}
+
+.about-content {
+  width: 448px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-line {
+  width: 100%;
+  height: 4px;
+  background: #000;
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background: #000;
+  grid-column: 2 / 12;
+}
+
+.structure-game {
+  grid-column: 2 / 12;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  bottom: -3rem;
+}
+
+.sith {
+  width: 400px;
+}
+
+.rey {
+  width: 240px;
+}
+
+.structure-container {
+  text-align: right;
+  width: calc(100% - 640px);
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.structure-container h2 {
+  width: 50%;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.structure-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.structure-container li {
+  font-size: 1rem;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: .5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.structure-container li:hover {
+  background: url(../assets/apps-bg.png);
+  color: #fff;
+}
